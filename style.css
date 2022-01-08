@@ -147,7 +147,7 @@ a {
   margin-bottom: 4rem;
 }
 .btn {
-  border-radius: 5px;
+  border-radius: none;
   margin-right: 20px;
   padding: 10px 15px;
   opacity: 1;
@@ -227,14 +227,14 @@ a {
   font-family: "Poppins", sans-serif;
 }
 #body-element .link {
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
   color: #5f6368;
   line-height: 2.5rem;
 }
 #body-element .link span {
   color: #000;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 768px) {
@@ -262,12 +262,12 @@ a {
   }
 }
 @media screen and (min-width: 1400px) {
-  #body-element {
+  /* #body-element {
     width: 80%;
     justify-content: space-between;
     margin-top: 10rem;
     margin-left: 15rem;
-  }
+  } */
   #footer {
     margin-left: 15rem;
   }
