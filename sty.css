@@ -1,0 +1,830 @@
+:root {
+  --color-primary: #0d1825;
+  --color-secondary: #0d60d8;
+  --color-font: #0c1825;
+  --color-text: #bbb;
+}
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  /* 62.5% of 16px =10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.9;
+}
+h1,
+h2,
+h3 {
+  color: var(--font-color);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+a {
+  text-decoration: none;
+}
+
+/** BEGINING OF HEADER SECTION **/
+#header {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 7px;
+  box-shadow: 0 10px 10px #f3f3f3;
+  grid-template-columns: 4fr 2fr;
+}
+
+#header .nav-bar-logo {
+  display: flex;
+  justify-content: start;
+}
+
+#header .nav-bar {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#header .logo {
+  margin-left: 20rem;
+  margin-top: 3rem;
+}
+
+.nav-toggler {
+  display: absolute;
+}
+
+.nav-item {
+  padding: 0 2rem;
+  line-height: 4;
+  font-size: 16px;
+}
+.nav-item > a {
+  color: #000;
+}
+
+#header .nav-bar-auth {
+  display: flex;
+  padding: 0 2rem;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 15px;
+  margin-right: 20px;
+  padding: 10px 15px;
+  opacity: 1;
+  transition: 0.3s;
+  font-size: 16px;
+  padding: 16px 22px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--color-secondary);
+  opacity: 1;
+  transition: 1s;
+}
+
+.btn-light {
+  border: 1px solid var(--color-text);
+  color: var(--color-primary);
+}
+
+.btn-light:hover {
+  color: var(--color-secondary);
+}
+
+#header .nav-mobile-menu {
+  display: none;
+}
+
+/* Specific header media queries for web */
+@media screen and (min-width: 1024px) {
+}
+/* Specific header media queires for mobile */
+@media screen and (max-width: 768px) {
+  #header .nav-mobile-menu {
+    display: block;
+    margin-right: 30px;
+  }
+  .nav-mobile-menu > a {
+    color: #000;
+  }
+  #header .nav-bar-auth,
+  #header .nav-bar {
+    display: none;
+  }
+}
+
+#header .logo {
+  margin-left: 10px;
+}
+/** END OF HEADER SECTION **/
+/* save and invest */
+#invest {
+  min-height: 10vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 7px;
+  grid-template-columns: 2fr 2fr;
+}
+#invest .invest-container {
+  margin-left: 10rem;
+  margin-top: 0;
+}
+#invest .invest-container > h1 {
+  font-size: 65px;
+}
+#invest .invest-container > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+#invest .download-container {
+  margin-top: 30px;
+}
+
+#invest .download-container img {
+  height: 15px;
+}
+/* picture section */
+#invest .picture img {
+  margin-top: 50px;
+  max-width: 1000px;
+}
+/* specific media query */
+@media screen and (max-width: 768px) {
+  #invest {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #invest h1 {
+    text-align: center;
+  }
+  #invest .download-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #invest .picture {
+    width: 100%;
+  }
+}
+
+/* margin-top: 60px; */
+#security-container {
+  min-height: 7vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1.5fr 2fr;
+}
+#security-container img {
+  max-width: 100px;
+  margin-left: 400px;
+  padding-top: 50px;
+}
+#security-container h1 {
+  margin-top: 0;
+  font-size: 30px;
+}
+#security-container p {
+  font-size: 14px;
+}
+#security-container .link {
+  font-size: 16px;
+  color: var(--color-secondary);
+  font-weight: 700;
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  #security-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #security-container img {
+    margin-left: 0px;
+  }
+
+  #security-container .security-content {
+    text-align: center;
+  }
+}
+/* savings section */
+#savings-container {
+  min-height: 7vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 4fr;
+  margin-top: 10rem;
+}
+#savings-container h2 {
+  font-size: 30px;
+  margin-left: 10rem;
+}
+#savings-container p {
+  font-size: 14px;
+  margin-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+#savings-container a {
+  margin-left: 10rem;
+}
+
+#savings-container .savings-right {
+  width: 80%;
+}
+
+#savings-container .card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#savings-container .card {
+  width: 350px;
+  height: 350px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+#savings-container img {
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+#savings-container h3 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 15px;
+}
+#savings-container .saving-item {
+  margin-left: 50px;
+  font-size: 13px;
+}
+#savings-container .pointer {
+  display: flex;
+  margin-left: 50px;
+}
+
+#savings-container span {
+  margin-left: 10px;
+  font-size: 16.5px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  #savings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .savings-left {
+    margin-left: 0;
+  }
+  #savings-container .card-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+/* investment section */
+#investment {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 50px;
+}
+#investment .investment-container {
+  margin-left: 200px;
+}
+#investment .tag {
+  background: #f7f0ff;
+  border-radius: 40px;
+  margin-bottom: 50px;
+  width: 170px;
+  font-size: 15px;
+  color: #854fe6;
+  padding: 0 1.7rem;
+  margin-top: 0px;
+}
+#investment p {
+  width: 30vw;
+  font-size: 14px;
+  margin-top: 30px;
+}
+#investment .heading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#investment .link-2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+#savers {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1.4fr 1fr;
+  margin-top: 50px;
+}
+#savers .savers-box {
+  background: #0d60d8;
+  height: 100%;
+}
+#savers h1 {
+  font-size: 50px;
+  color: #fff;
+  width: 75%;
+  text-align: left;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+#savers p {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 90px;
+}
+#savers .savers-image {
+  background: url(https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/saver_e664560d5a/saver_e664560d5a.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 130%;
+}
+
+#savers .icon {
+  margin-left: 90px;
+  margin-top: 30px;
+}
+#savers .pointer {
+  display: flex;
+}
+#savers span {
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 16.5px;
+}
+
+@media screen and (max-width: 768px) {
+  #savers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+/* Testimonial */
+#testimonial-container {
+  min-height: 10vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 2fr;
+}
+
+.invest-container h2 {
+  margin-top: 100px;
+  width: 100%;
+}
+#invests {
+  min-height: 10vw;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 7px;
+  grid-template-columns: 2fr 2fr;
+  padding-left: 2rem;
+}
+#invests p {
+  line-height: 3rem;
+  font-size: 16.5px;
+  margin-bottom: 30px;
+}
+
+#invests .download-container {
+  margin-top: 30px;
+}
+#testimonial-container p {
+  line-height: 3rem;
+  font-size: 16.5px;
+  margin-bottom: 30px;
+}
+/* feature */
+#feature {
+  background: #f9f9f9;
+  display: grid;
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+  grid-template-columns: 2fr 3fr;
+}
+#feature h1 {
+  margin-left: 15rem;
+  font-size: 35px;
+  color: var(--color-font);
+  margin-top: 50px;
+}
+#feature .techcrunch img {
+  width: 50%;
+  padding-top: 1rem;
+}
+#feature .techpoint {
+  width: 50%;
+  padding-top: 3rem;
+}
+#feature .guardian {
+  width: 50%;
+  padding-top: 2rem;
+}
+#feature .sponsor {
+  display: flex;
+  justify-content: none;
+  margin-top: 30px;
+  width: 75%;
+}
+#footer {
+  grid-template-columns: 2fr 4fr;
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+#footer .logo {
+  margin-left: 10rem;
+}
+#footer .list {
+  display: flex;
+}
+#footer .list-item {
+  list-style: none;
+  font-size: 13px;
+}
+#footer a {
+  color: var(--color-font);
+}
+#footer h2 {
+  font-size: 16.5px;
+  color: var(--color-primary);
+}
+#footer .list-A {
+  padding: 0 5rem;
+}
+#footer .contact {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+#footer .number {
+  text-align: right;
+}
+#bio {
+  margin-top: 7rem;
+  font-size: 13px;
+  width: 65%;
+  text-align: center;
+  margin-left: 20rem;
+}
+#bio h4 {
+  color: var(--color-secondary);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Piggyvest session */
+#piggy-invest {
+  grid-template-columns: 2fr 2fr;
+  width: 100%;
+  display: grid;
+  color: var(--color-primary);
+  margin-top: 10rem;
+}
+#piggy-invest .piggyinvest-container {
+  margin-left: 15rem;
+  margin-top: 15rem;
+}
+#piggy-invest h1 {
+  font-size: 65px;
+}
+#piggy-invest p {
+  font-size: 16.5px;
+}
+#piggy-invest .piggyvest {
+  list-style: none;
+}
+.btn-savings {
+  background: var(--color-secondary);
+  color: #fff;
+}
+/* save container */
+#save-item {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+#save-item h2 {
+  color: var(--color-primary);
+}
+#save-item p {
+  color: var(--color-primary);
+  font-size: 15px;
+}
+/* saving container */
+#save-container {
+  min-height: 7vw;
+  width: 80%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-top: 10rem;
+  margin-left: 15rem;
+}
+#save-container h2 {
+  font-size: 30px;
+  margin-left: 10rem;
+}
+#save-container p {
+  font-size: 14px;
+  margin-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+#save-container a {
+  margin-left: 10rem;
+}
+
+#save-container .save-right {
+  width: 100%;
+}
+
+#save-container .card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#save-container .card {
+  width: 320px;
+  height: 270px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+#save-container img {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+#save-container h3 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+#save-container .save-item {
+  margin-left: 30px;
+  font-size: 13px;
+}
+/* build your savings section */
+#safe {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1.4fr 1fr;
+  margin-top: 50px;
+}
+#safe .safe-box {
+  background: #0d60d8;
+  height: 300px;
+}
+#safe h1 {
+  font-size: 40px;
+  color: #fff;
+  width: 75%;
+  text-align: left;
+  margin-left: 15rem;
+  margin-top: 40px;
+}
+#safe p {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 15rem;
+}
+#safe .safe-image {
+  background: url(https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/image_ca24bb2340/image_ca24bb2340.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -70px;
+}
+
+/* invest section */
+.btn-invest {
+  background: #9b4eec;
+  color: #fff;
+}
+#piggy-invest {
+  grid-template-columns: 2fr 2fr;
+  width: 100%;
+  display: grid;
+  color: var(--color-primary);
+  margin-top: 10rem;
+}
+/* investing */
+
+#save {
+  min-height: 5vw;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1.4fr 1fr;
+  margin-top: 50px;
+}
+#save .save-box {
+  background: #7913e5;
+  height: 350px;
+}
+#save h1 {
+  font-size: 40px;
+  color: #fff;
+  width: 75%;
+  text-align: left;
+  margin-left: 20rem;
+  margin-top: 40px;
+}
+#save p {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20rem;
+}
+#save .save-image {
+  background: url(https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/image_10ee373879/image_10ee373879.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -40px;
+}
+
+/* different investment */
+#save-contain {
+  min-height: 7vw;
+  width: 80%;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-top: 10rem;
+  margin-left: 15rem;
+  margin-bottom: 30px;
+}
+#save-contain h2 {
+  font-size: 30px;
+  margin-left: 10rem;
+}
+#save-contain p {
+  font-size: 14px;
+  padding-bottom: 3rem;
+  text-align: left;
+  font-weight: bolder;
+}
+#save-contain a {
+  margin-left: 10rem;
+}
+
+#save-contain .save-right {
+  width: 100%;
+}
+
+#save-contain .card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#save-contain .card {
+  width: 300px;
+  height: 320px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+#save-contain .card img:hover {
+  /* box-shadow: #f9f9f9;
+  background-color: #f9f9f9; */
+  border: 1px solid #f9f9f9;
+}
+#save-contain img {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  margin-left: 30px;
+  margin-top: 30px;
+  object-fit: cover;
+  left: -31px;
+  top: -27px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#save-contain h3 {
+  font-weight: 600;
+  margin-left: 30px;
+  font-size: 18px;
+  color: var(--color-primary);
+}
+#save-contain .save-item {
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+#save-contain .price-list {
+  display: flex;
+}
+#save-contain .price {
+  position: relative;
+  margin-left: 3rem;
+}
+#save-contain small {
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+}
+#save-contain .investors {
+  position: relative;
+  margin-left: 7rem;
+}
+
+#save-contain .sold-out {
+  width: 100px;
+  height: 30px;
+  background: #f4ebee;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+#save-contain .sold-out p {
+  text-align: center;
+  color: #b32e58;
+  font-size: 15px;
+}
