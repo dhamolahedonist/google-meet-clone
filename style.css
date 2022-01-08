@@ -282,7 +282,7 @@ a {
 #footer {
   display: flex;
   flex-direction: row;
-  margin-left: 10rem;
+  margin-left: 2rem;
 }
 #footer p {
   font-size: 18px;
