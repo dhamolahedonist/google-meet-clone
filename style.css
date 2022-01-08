@@ -250,13 +250,13 @@ a {
   #body-element .picture {
     justify-content: center;
     margin-bottom: 2rem;
-    margin-left: 0;
+    margin-left: 10px;
     /* max-width: 20%; */
   }
-  #body-element p {
+  #body-element .body p {
     font-size: 16px;
     text-align: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   #body-element .container {
     display: flex;
