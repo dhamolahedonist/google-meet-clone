@@ -189,7 +189,7 @@ a {
 }
 #body-element .picture {
   margin-left: 30rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .btn-1 {
@@ -215,6 +215,16 @@ a {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
 }
+#body-element .link {
+  font-size: 15px;
+  text-align: center;
+  color: #5f6368;
+  line-height: 2.5rem;
+}
+#body-element .link span {
+  color: #000;
+  font-size: 20px;
+}
 
 @media screen and (max-width: 768px) {
   #body-element h1 {
@@ -237,6 +247,11 @@ a {
     margin-bottom: 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  #body-element .picture {
+    display: none;
+  }
+}
 /* footer */
 #footer {
   display: flex;
@@ -251,21 +266,4 @@ a {
 }
 #footer .footer-line {
   color: var(--color-secondary);
-}
-#footer .link {
-  margin-left: 55rem;
-  margin-top: 15px;
-  text-align: center;
-  line-height: 2.1rem;
-}
-#footer .link {
-  font-size: 15px;
-}
-#footer .link span {
-  color: #000;
-  font-size: 22px;
-}
-#footer .link .meet {
-  font-size: 15px;
-  font-weight: 500;
 }
