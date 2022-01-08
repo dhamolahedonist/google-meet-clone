@@ -268,6 +268,9 @@ a {
     margin-top: 10rem;
     margin-left: 15rem;
   }
+  #footer {
+    margin-left: 15rem;
+  }
 }
 @media screen and (max-width: 768px) {
   #body-element .picture {
